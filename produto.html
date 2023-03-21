@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="ação e executar">
+        <fieldset>
+            <legend>Cadastro de Produto</legend>
+            <label for="iprodut">Produto:</label>
+
+            <br>
+            <br>
+            <input type="text" id="iprodut" name="tproduto" placeholder="Digite o nome do produto">
+
+            <br>
+            <br>
+            <label for="idate">Data Cadastro:</label>
+
+            <br>
+            <br>
+            <input type="date" id="idate" name="tdata">
+
+            <br>
+            <br>
+            <label for="icategoria">Categoria:</label>
+            <select name="scategoria" id="icategoria">
+                <option value="L">Livros</option>
+                <option value="C">Cadernos</option>
+            </select>
+            <br>
+            <br>
+            <label for="ipeso">Peso (KG):</label>
+            <br>
+            <input type="number" id="ipeso" name="peso" placeholder="Informe seu peso">
+            <br>
+            <br>
+            <p>Situação</p>
+            <input type="radio" id="irdnovo" name="rdnovo">
+            <label for="rdnovo">Novo</label>
+
+            <input type="radio" id="irdusado" name="rdusado">
+            <label for="rdusado">Usado</label>
+
+            <br>
+            <br>
+            <label for="idescricao">Descrição</label>
+            <br>
+            <br>
+            <textarea name="txtdescricao" id="idescricao" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="iava">Avaliação (0-10)</label>
+            <input type="range" id="iava" name="rava" min="0" max="10">
+            <br>
+            <br>
+            <input type="submit" id="ienviar" name="senviar" value="Enviar">
+            <input type="reset" id="limpar" name="rlimpar" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>
